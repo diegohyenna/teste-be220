@@ -1,0 +1,33 @@
+<div class="carousel">
+  <div class="title">
+    <h1>{{ title }}</h1>
+    <ion-icon *ngIf="icon" [name]="icon"></ion-icon>
+    <span class="badge" *ngIf="badge">
+      {{ badge }}
+    </span>
+  </div>
+  <div class="cards">
+    <ion-spinner *ngIf="!items.length" name="dots" color="light"></ion-spinner>
+    <div
+      #cardElement
+      class="card"
+      *ngFor="let item of items"
+      (click)="activedCard(cardElement)"
+    >
+      <img [src]="item.src" />
+      <div class="content">
+        <span *ngIf="item.active" class="continue">continuar treinando</span>
+        <h3 class="title">{{ item.title }}</h3>
+      </div>
+      <div class="ghost-content">
+        <div class="container" *ngIf="!item.active">
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <h3 class="title">Novo treino</h3>
+        </div>
+        <div class="container" *ngIf="item.active">
+          <h3 class="title">Continuar...</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

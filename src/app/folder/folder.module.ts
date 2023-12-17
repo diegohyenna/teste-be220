@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
 
+import { ComponentsModule } from '../components/carousel/components.module';
 import { FolderPageRoutingModule } from './folder-routing.module';
-
 import { FolderPage } from './folder.page';
 
 @NgModule({
@@ -13,8 +12,9 @@ import { FolderPage } from './folder.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule
+    ComponentsModule,
+    FolderPageRoutingModule,
   ],
-  declarations: [FolderPage]
+  declarations: [FolderPage],
 })
 export class FolderPageModule {}

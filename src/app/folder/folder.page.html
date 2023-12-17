@@ -3,16 +3,38 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-    <ion-buttons slot="end">
-      <ion-icon size="medium" name="notifications-outline"></ion-icon>
+    <div class="brand"><img src="assets/imgs/brand.jpg" /></div>
+    <ion-buttons class="notification" slot="end">
+      <ion-icon name="notifications"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
-  <ion-content class="">
-    <img
-      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    />
-  </ion-content>
+  <div class="header">
+    <div class="profile">
+      <img
+        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+      <div class="content">
+        <h3 class="name">Alessandra Santos</h3>
+        <span class="level">Nivel Roxo</span>
+      </div>
+    </div>
+    <div class="container-center">
+      <div class="options">
+        <div class="option">
+          <div class="badge">
+            <ion-icon name="accessibility"></ion-icon>
+          </div>
+          <span>meu corpo</span>
+        </div>
+        <div class="option">
+          <div class="badge">
+            <ion-icon name="trophy"></ion-icon>
+          </div>
+          <span>objetivos e conquistas</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -22,16 +44,16 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>
-      Explore
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components"
-        >UI Components</a
-      >
-    </p>
+  <div id="container" class="body">
+    <app-carousel
+      title="personal online"
+      icon="add-circle-outline"
+      [items]="personal"
+    ></app-carousel>
+    <app-carousel
+      title="programas"
+      badge="novo"
+      [items]="programs"
+    ></app-carousel>
   </div>
 </ion-content>
