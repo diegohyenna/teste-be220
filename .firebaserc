@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "teste-be220-914e6": {
+      "hosting": {
+        "app": [
+          "teste-be220-914e6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "teste-be220-914e6"
+  }
+}
