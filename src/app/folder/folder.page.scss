@@ -52,8 +52,8 @@ ion-buttons.notification::after {
 .header {
   background-color: #1f1f1f;
   padding: 12px 36px;
-  border-bottom-left-radius: 36px;
-  border-bottom-right-radius: 36px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 
   .profile {
     display: flex;
@@ -74,13 +74,13 @@ ion-buttons.notification::after {
 
       .name {
         color: white;
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
       }
 
       .level {
         color: blueviolet;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 100;
       }
     }
@@ -101,13 +101,14 @@ ion-buttons.notification::after {
       .option {
         display: flex;
         gap: 3px;
+        align-items: center;
 
         & > * {
           color: orange;
         }
 
         span {
-          font-size: 13px;
+          font-size: 14px;
           text-transform: uppercase;
           font-weight: 100;
         }
