@@ -17,14 +17,14 @@
     }
 
     ion-icon {
-      font-size: 30px;
-      color: orange;
-      margin-top: 4px;
+      font-size: 34px;
+      color: #ff7800;
+      margin-top: 2px;
     }
 
     .badge {
       border-radius: 12px;
-      background: orange;
+      background: #ff7800;
       color: white;
       padding: 0px 8px;
       display: inline-flex;
@@ -32,7 +32,7 @@
       font-size: 10px;
       text-transform: uppercase;
       align-self: flex-start;
-      margin-top: 8px;
+      margin-top: 6px;
     }
   }
   .cards {
@@ -91,9 +91,9 @@
         }
 
         .continue {
-          color: orange;
+          color: #ff7800;
           font-weight: 400;
-          font-size: 11px;
+          font-size: 12px;
         }
       }
 

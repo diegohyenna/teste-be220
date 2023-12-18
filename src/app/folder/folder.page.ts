@@ -25,7 +25,7 @@ export class FolderPage implements OnInit, AfterContentInit {
     this.apiService.getProgramsByActive();
   }
 
-  async ngAfterContentInit() {
+  ngAfterContentInit() {
     this.apiService.programsDesactived.subscribe((items) => {
       this.personal = items;
     });
